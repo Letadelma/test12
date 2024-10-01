@@ -1,0 +1,68 @@
+
+/* L'étoile donne du style à TOUS les éléments */
+/* * {
+  margin: 0;
+  padding: 0;
+  border: 2px solid red;
+} */
+
+body {
+  background: url(./assets/img/bg.jpg) center/cover;
+  /* VH = 100% de la taille de l'écran (viewport height) */
+  /* min-height: 100vh; */
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  /* Les tailles de polices doivent être en REM */
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 8px #00000042;
+  color: #ab0ef4;
+}
+
+main {
+  min-height: 500px;
+  width: 90%;
+  background: rgba(245, 245, 245, 0.9);
+  /* Centrer une boite */
+  margin: 0 auto;
+  border: 2px solid rgb(0, 140, 255);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 0px 20px 4px #81cfc6;
+  padding: 15px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.flexbox {
+  border: 2px solid skyblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  min-height: 150px;
+}
+
+/* FLEXBOX */
+/* Sert a répartir équitablement des éléments sur la page */
+.flexbox ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexbox li {
+  list-style: none;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  background: turquoise;
+  /* Centrer un unique élément veticalement et horizontalement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
